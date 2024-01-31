@@ -27,7 +27,7 @@ public class Car extends Vehicle {
     public int getWheels(){return wheels;}
     public String getType(){return type;}
     public int getDoors(){return doors;}
-    public int getGears(){return gears;}
+    public int getCurrentGear(){return gears;}
     public boolean isManual(){return isManual;}
     public int getSeats(){return seats;}
 
@@ -37,7 +37,7 @@ public class Car extends Vehicle {
 
     public void changeGear(int newGear){
         setGear(newGear);
-        System.out.println("changeGear method called - The gear is changed to: " + getGears());
+        System.out.println("changeGear method called - The gear is changed to: " + getCurrentGear());
     }
 
     public void changeSpeed(int newSpeed, int newDirection){
