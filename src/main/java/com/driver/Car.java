@@ -11,6 +11,7 @@ public class Car extends Vehicle {
 
     public Car(String name , boolean isManual){
         super(name);
+        setGear(1);
         this.isManual = isManual;
     }
 
@@ -34,7 +35,6 @@ public class Car extends Vehicle {
     public int getCurrentGear(){return currentGear;}
     public boolean isManual(){return isManual;}
     public int getSeats(){return seats;}
-
 
 
     public void changeGear(int newGear){
