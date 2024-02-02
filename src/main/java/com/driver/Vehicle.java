@@ -27,7 +27,8 @@ public class Vehicle {
 
     public void steer(int direction){
         //direction is in degrees, add it to the current direction
-        int newDirection = getCurrentDirection() + direction;
+        int newDirection = getCurrentDirection()+direction;
+        if(newDirection>360) newDirection -=360;
         setCurrentDirection(newDirection);
         System.out.println("steer method called - The direction is changed to: " + getCurrentDirection() + " degrees");
     }
